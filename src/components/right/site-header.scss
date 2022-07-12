@@ -1,0 +1,62 @@
+@import '../../assets/scss/variable.scss';
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: hsl(230, 31%, 31%);
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.site-header__wrraper-left {
+    display: flex;
+    align-items: center;
+}
+.site-header__wrraper-left-head {
+    margin-right: 38px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    &::before{
+        margin-right: 16px;
+        width: 23px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url('../../assets/img/bulb.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+    }
+}
+.site-header__wrraper-left-span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.site-header__wrraper-left-selct {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+   
+}
+.site-header__wrraper-add {
+    padding: 13px 25px 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F2F4FE;
+    background-color: $color-roz;
+    border-radius: 10px;
+    border: none;
+}

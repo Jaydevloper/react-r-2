@@ -1,0 +1,73 @@
+@import '../../assets/scss/variable.scss';
+.roadmap-content {
+    margin-top: 24px;
+    padding: 19px 24px 24px 24px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.roadmap-content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roadmap-content__head {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+}
+.roadmap-content__link {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: $color-blueb;
+    &:active{
+        color: #8397F8;
+    }
+}
+.roadmap-content__page {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: $color-secondry;
+    &::before{
+        margin-right: 16px;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #F49F85;
+        border-radius: 50%;
+        content: '';
+    }
+    &--orange{
+        &::after{
+            content: '2';
+        }
+    }
+    &--roz{
+        &::before{
+            background-color: $color-roz;
+        }
+        &::after{
+            content: '3';
+        }
+    }
+    &--blue{
+        &::before{
+            background-color: #62BCFA;
+        }
+        &::after{
+            content: '1';
+        }
+    }
+    &::after{
+        margin-left: auto;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: $color-secondry;
+    }
+}
