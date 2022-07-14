@@ -1,7 +1,10 @@
 import './left-content.scss'
 import './filter-content.scss'
 import './roadmap-content.scss'
+
+
 function Left () {
+    
     return (
        <div className="left-content">
   <div className="left-content__mentor">
@@ -45,6 +48,7 @@ function Left () {
     <p className="roadmap-content__page roadmap-content__page--roz">In-Progress</p>
     <p className="roadmap-content__page roadmap-content__page--blue">Live</p>
   </div>
+
 </div>
 
     )

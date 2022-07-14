@@ -1,9 +1,8 @@
-@import '../../assets/scss/mixin.scss';
-@import '../../assets/scss/variable.scss';
-.right-content__list {
-    @include list-unstyle;
-}
+@import '../assets/scss/mixin.scss';
+@import '../assets/scss/variable.scss';
+@import '../assets/scss/container.scss';
 .right-content__list-item {
+    @include list-unstyle;
     margin-top: 20px;
     padding: 28px 32px 28px 32px;
     border-radius: 10px;
@@ -38,7 +37,7 @@
         display: block;
         width: 8px;
         height: 4px;
-        background-image: url('../../assets/img/arrow.svg');
+        background-image: url('../assets/img/arrow.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -59,7 +58,6 @@
     color: $color-secondry
 }
 .right-content__comment {
-    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
@@ -74,7 +72,7 @@
         vertical-align: middle;
         width: 18px;
         height: 16px;
-        background-image: url('../../assets/img/comment.svg');
+        background-image: url('../assets/img/comment.svg');
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;

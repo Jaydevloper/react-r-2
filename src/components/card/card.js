@@ -1,5 +1,6 @@
-import './card.scss'
-function Card({Numb,Name,Title,Link,Comment}){
+import './card.scss';
+import {Link} from 'react-router-dom';
+function Card({Numb,Name,Title,link,Comment,id}){
     return(
         <li className="right-content__list-item">
         <div className="right-content__list-item-wrraper">
@@ -14,12 +15,12 @@ function Card({Numb,Name,Title,Link,Comment}){
               <p className="right-content__page">
                 {Title}
               </p>
-              <button className="filter-content__list-item-btn">{Link}</button>
+              <button className="filter-content__list-item-btn">{link}</button>
             </div>
           </div>
-          <button className="right-content__comment">
+          <Link className="right-content__comment" to={`/single/${id}`}>
             {Comment}
-          </button>
+          </Link>
         </div>
       </li>
     )

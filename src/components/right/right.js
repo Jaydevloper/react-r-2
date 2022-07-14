@@ -20,7 +20,6 @@ function Right (){
     <Cards></Cards>
   </ul>
 </div>
-
     )
 }
 export default Right;
